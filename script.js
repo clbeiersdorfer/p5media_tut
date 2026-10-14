@@ -9,7 +9,7 @@ let movement; // previously used a reserved keyword
   img = await loadImage('media/flower.gif');
    vid = createVideo('media/dino.mp4');
 mySound = await loadSound('media/NonaSnoring_WEB.mp3');
-   
+   vid.hide(); // hide in the setup so it's "drawn" at the start and then hidden for each reload of draw()
  
 
 }
