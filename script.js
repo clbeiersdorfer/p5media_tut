@@ -2,7 +2,7 @@ let img; // image
 let y= 0; // animation on x-axis
 let vid; //video
 let mySound;
-let movement;
+let movement; // previously used a reserved keyword
  async function setup() {
   createCanvas(400, 400);
    //load image
@@ -25,7 +25,7 @@ image(img,0,y);
   if(y>height){
     y =0;
   }
-push();
+push(); //isolated the animation
   movement = frameCount * 0.02;
   rotate(movement);
   fill("red");
